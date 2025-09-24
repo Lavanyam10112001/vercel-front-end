@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {Link, useLocation, useNavigate} from "react-router-dom"
 import {assets} from "../assets/assets";
 import {useClerk, useUser, UserButton} from "@clerk/clerk-react";
@@ -67,7 +67,7 @@ useEffect(() => {
 
   {/* Desktop Right */}
          <div className="hidden md:flex items-center gap-4">
- <img src={assets.searchIcon} alt="search" className={`${isScrolled && 'invert'}h-7 transition-all duration-500`}/>
+ <img src={assets.searchIcon} alt="search" className={`${isScrolled && 'invert'} h-7 transition-all duration-500`}/>
       {user ? 
       (<UserButton>
         <UserButton.MenuItems>
