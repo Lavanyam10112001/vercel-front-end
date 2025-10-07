@@ -1,7 +1,6 @@
 import React from 'react'
-import { assets } from '../assets/assets' // adjust path if needed
+import { assets } from '../assets/assets' 
 
-// Simple Title component
 const Title = ({ title, subTitle }) => (
   <div className="text-center mb-6">
     <h2 className="text-2xl md:text-4xl font-bold">{title}</h2>
@@ -26,6 +25,7 @@ const NewsLetter = () => {
         <button className="flex items-center justify-center gap-2 group bg-black px-4 md:px-7 py-2.5 rounded active:scale-95 transition-all">
           Subscribe
           <img 
+          
             src={assets.arrowIcon} 
             alt="arrow-icon" 
             className='w-3.5 invert group-hover:translate-x-1 transition-all'
